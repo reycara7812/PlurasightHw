@@ -26,17 +26,7 @@ public class CollectionConcepts
             System.out.println(product);
         }
 
-        // Broken removal using foreach
-        /*for (var product : products) {
-            if (product.getWeight() > 20)
-            {
-                System.out.println(product);
-            }
-            else
-            {
-                products.remove(product);
-            }
-        }*/
+
 
         // Refactor to use iterator to remove products.
         Iterator<Product> iterator = products.iterator();
@@ -50,7 +40,7 @@ public class CollectionConcepts
         }
         System.out.println(products);
 
-        // 4. other methods
+
         System.out.println(products.size());
         System.out.println(products.isEmpty());
         System.out.println(products.contains(floorPanel));
